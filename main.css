@@ -1,0 +1,14 @@
+.main .navi {
+  background-color: aqua;
+  height: 100px;
+}
+.main .des {
+  padding: 0 50px;
+}
+.main .des .description {
+  padding: 0 20px;
+  background-color: aquamarine;
+}
+.main .description .top-menu {
+  
+}
