@@ -14,13 +14,10 @@ const template = `
     </div>
   </div>
   <div class='description'>
-    <div>
-      <p class='des-in-title'>
-        asnkldnafafas
-      </p>
-      <p class='des-in-des>
-        aslknawsdas
-      </p>
+    <div class='description-view'>
+      <image class='image'></image>
+      <p>title</p>
+      <p>des</p>
     </div>
   </div>
 </div>
