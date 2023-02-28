@@ -119,7 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"main.js":[function(require,module,exports) {
 var container = document.getElementById("root");
-var template = "\n<div>\n  <div class='navi'>\n    <p>asd</p>\n  </div>\n  <div class=\"des\">\n    <div class='description'>\n      <div class='top-menu'>\n        <button>w</button>\n        <button>m</button>\n        <button>s</button>\n      </div>\n      <div>\n        <div>\n          <p class='des-in-title'>\n            asnkldnafafas\n          </p>\n        </div>\n        <div>\n          <p class='des-in-des>\n            aslknawsdas\n          </p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n";
+var template = "\n<div>\n  <div class='navi'>\n    <p>asd</p>\n  </div>\n  <div class=\"top-title\">\n    <span>title</span>\n    <div class='top-menu'>\n      <button>Write</button>\n      <button>Modify</button>\n      <button>Sort</button>\n    </div>\n  </div>\n  <div class='description'>\n    <div>\n      <p class='des-in-title'>\n        asnkldnafafas\n      </p>\n      <p class='des-in-des>\n        aslknawsdas\n      </p>\n    </div>\n  </div>\n</div>\n";
 container.innerHTML = template;
 },{}],"../../Users/7220/AppData/Roaming/nvm/v14.16.1/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -146,7 +146,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3754" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4226" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

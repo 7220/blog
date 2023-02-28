@@ -5,25 +5,22 @@ const template = `
   <div class='navi'>
     <p>asd</p>
   </div>
-  <div class="des">
-    <div class='description'>
-      <div class='top-menu'>
-        <button>w</button>
-        <button>m</button>
-        <button>s</button>
-      </div>
-      <div>
-        <div>
-          <p class='des-in-title'>
-            asnkldnafafas
-          </p>
-        </div>
-        <div>
-          <p class='des-in-des>
-            aslknawsdas
-          </p>
-        </div>
-      </div>
+  <div class="top-title">
+    <span>title</span>
+    <div class='top-menu'>
+      <button>Write</button>
+      <button>Modify</button>
+      <button>Sort</button>
+    </div>
+  </div>
+  <div class='description'>
+    <div>
+      <p class='des-in-title'>
+        asnkldnafafas
+      </p>
+      <p class='des-in-des>
+        aslknawsdas
+      </p>
     </div>
   </div>
 </div>
