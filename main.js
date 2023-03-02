@@ -3,9 +3,16 @@ const container = document.getElementById("root");
 const template = `
 <div>
   <div class='navi'>
-    <p>asd</p>
-    <a href="#">
-      <img src="" alt="Github">Github</a>
+    <div class="github-icon">
+      <a href="https://github.com/7220">
+      <img src="./images/github-icon.png" alt="Github">
+      </a>
+    </div>
+    <div class="navi-menu">
+      <span class="material-symbols-outlined">
+        menu
+      </span>
+    </div>
   </div>
   <div class="background">
     <div class="top-title">

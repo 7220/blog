@@ -11,22 +11,29 @@ a {
 .main .navi {
   background-color: #fcfcfc;
   height: 80px;
+  width: 100%;
   border-bottom: 1px solid #555555;
-  display: flex;
   position: relative;
   text-align: right;
-
 }
 .main .navi .github-icon {
   position: absolute;
-  margin: 15px 15px;
+  top: 0;
+  right: 150px;
+  padding: 15px;
   transition: 0.2s;
 }
 .main .navi .github-icon:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
-.main .navi .material-symbols-outlined {
-  
+.main .navi .navi-menu {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  padding: 15px;
+}
+.main .navi .navi-menu .material-symbols-outlined {
+  font-size: 50px;
 }
 
 

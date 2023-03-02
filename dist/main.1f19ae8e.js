@@ -119,7 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"main.js":[function(require,module,exports) {
 var container = document.getElementById("root");
-var template = "\n<div>\n  <div class='navi'>\n    <p>asd</p>\n    <a href=\"#\">\n      <img src=\"\" alt=\"Github\">Github</a>\n  </div>\n  <div class=\"background\">\n    <div class=\"top-title\">\n      <span>title</span>\n      <div class='top-menu'>\n        <button>Write</button>\n        <button>Modify</button>\n        <button>Sort</button>\n      </div>\n    </div>\n    <div class='description'>\n      <a href='#' class='description-view'>\n        <image class='image'></image>\n        <div class=\"des-main\">\n          <p class=\"des-title\">title</p>\n          <p class=\"time-ago\">date</p>\n        </div>\n      </a>\n    </div>\n  </div>\n</div>\n";
+var template = "\n<div>\n  <div class='navi'>\n    <div class=\"github-icon\">\n      <a href=\"https://github.com/7220\">\n      <img src=\"./images/github-icon.png\" alt=\"Github\">\n      </a>\n    </div>\n    <div class=\"navi-menu\">\n      <span class=\"material-symbols-outlined\">\n        menu\n      </span>\n    </div>\n  </div>\n  <div class=\"background\">\n    <div class=\"top-title\">\n      <span>title</span>\n      <div class='top-menu'>\n        <button>Write</button>\n        <button>Modify</button>\n        <button>Sort</button>\n      </div>\n    </div>\n    <div class='description'>\n      <a href='#' class='description-view'>\n        <image class='image'></image>\n        <div class=\"des-main\">\n          <p class=\"des-title\">title</p>\n          <p class=\"time-ago\">date</p>\n        </div>\n      </a>\n    </div>\n  </div>\n</div>\n";
 
 // container.innerHTML = template;
 },{}],"../../Users/7220/AppData/Roaming/nvm/v14.16.1/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -147,7 +147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "13830" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11963" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
