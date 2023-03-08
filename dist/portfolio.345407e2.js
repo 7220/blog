@@ -117,62 +117,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../Users/7220/AppData/Roaming/nvm/v14.16.1/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-  return bundleURL;
-}
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-  return '/';
-}
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../Users/7220/AppData/Roaming/nvm/v14.16.1/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-function updateLink(link) {
-  var newLink = link.cloneNode();
-  newLink.onload = function () {
-    link.remove();
-  };
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-var cssTimeout = null;
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-    cssTimeout = null;
-  }, 50);
-}
-module.exports = reloadCSS;
-},{"./bundle-url":"../../Users/7220/AppData/Roaming/nvm/v14.16.1/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"main.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../../Users/7220/AppData/Roaming/nvm/v14.16.1/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../Users/7220/AppData/Roaming/nvm/v14.16.1/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})({"template/portfolio.js":[function(require,module,exports) {
+var container = document.getElementById("root");
+var template = "\n<div>\n  <div class='navi'>\n    <div class=\"github-icon\">\n      <a href=\"https://github.com/7220\">\n      <img src=\"./images/github-icon.png\" alt=\"Github\">\n      </a>\n    </div>\n    <div class=\"navi-menu\">\n      <span class=\"material-symbols-outlined\">\n        menu\n      </span>\n    </div>\n  </div>\n  <div class=\"main-description\">\n    <div class=\"self-introduce\">\n      \uC790\uAE30\uC18C\uAC1C\n      - \uC800\uB294 \uC0AC\uC6A9\uC790 \uCE5C\uD654\uC801\uC778 \uD504\uB85C\uADF8\uB798\uBC0D\uC744 \uBAA9\uD45C\uB85C \uD558\uB294 \uC2E0\uC785 \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C\uC790 \uAE40\uC0C1\uADDC\uC785\uB2C8\uB2E4.\n      - \n    </div>\n    <div class=\"skill\">\n      \uBCF4\uC720\uAE30\uC220\n      - \uD504\uB860\uD2B8\uC5D4\uB4DC \uAE30\uC220\n      - html/css\n      - SCSS\n      - BootStrap\n      - Twintail\n      - JavaScript\n      - TypeScript\n      - jquery\n      - React\n      - Redux\n      - Next\n      - MobX\n      \n\n\n\n      - \uBC31\uC5D4\uB4DC \uAE30\uC220\n      - node.js\n      - \n    </div>\n    <div class=\"portfolio\">\n      \uD3EC\uD2B8\uD3F4\uB9AC\uC624\n      - \uD3EC\uD3F4\uC81C\uBAA9\n      - \uD3EC\uD3F4 \uB9CC\uB4E4\uB54C \uC4F4 \uAE30\uC220\n      - \uC124\uBA85\n    </div>\n  </div>\n</div>\n\n";
+
+// container.innerHTML = template
+},{}],"../../Users/7220/AppData/Roaming/nvm/v14.16.1/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -341,5 +291,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../Users/7220/AppData/Roaming/nvm/v14.16.1/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/main.af46ece4.js.map
+},{}]},{},["../../Users/7220/AppData/Roaming/nvm/v14.16.1/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","template/portfolio.js"], null)
+//# sourceMappingURL=/portfolio.345407e2.js.map
