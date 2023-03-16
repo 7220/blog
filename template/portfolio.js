@@ -37,8 +37,6 @@ const template =
       - MobX
       
 
-
-
       - 백엔드 기술
       - node.js
       - 

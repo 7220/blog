@@ -1,6 +1,7 @@
 const container = document.getElementById("root");
 
-const template = `
+const template = 
+`
 <div>
   <div class='navi'>
     <div class="github-icon">
